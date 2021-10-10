@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style_home.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+  </head>
+  <body>
+    <a href="index.html"><img class="home" src="home.png" alt=""></a>
+    <div class="whole">
+      <div class="head">
+        <h1 style="color:gold;letter-spacing:1px;">ENGINEERING OVERVIEW</h1>
+        <p>This webiste is for the students who wants some basic information about carrer opportunities in engineering and to know in brief about some of the common terms that they should be aware of.</p>
+        <hr>
+      </div>
+
+        <div class="content">
+          <div class="center">
+             <ul id="list">
+               <li onclick="javascript:cse()">CSE</li>
+               <li onclick="javascript:mech()">MECHANICAL</li>
+               <li onclick="javascript:civil()">CIVIL</li>
+               <li onclick="javascript:elec()">ELECTRICAL</li>
+
+             </ul>
+          </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+  function cse()
+  {
+    var Str=
+    '<h2 style="color:gold;">CSE(Computer Science and Engineering)</h2>'+
+    '<p style="color:white;"><b style="font-size:20px;">What does a Computer Science engineer do?</b> The primary focus of computer engineers is the designing, testing, implementing, and maintaining of computer hardware and software. They are responsible for the smooth functioning of the components of the software programming as well as the components of the hardware systems</p>';
+    $('.head').html(Str);
+
+    var Str2=
+    '<ul style="margin-auto;">'+
+    '<li onclick="javascript:fields(1)">FIELDS</li>'+
+    '<li>SUBJECTS</li>'+
+    '<li>TERMINOLOGIES</li>'+
+    '</ul>';
+			$('.center').html(Str2);
+  }
+  function mech()
+  {
+    var Str=
+    '<h2 style="color:gold;">MECHANICAL ENGINEERING</h2>'+
+    '<p style="color:white;"><b style="font-size:20px;">What does a Mechanical engineer do?</b> Mechanical engineers design power-producing machines, such as electric generators, internal combustion engines, and steam and gas turbines, as well as power-using machines, such as refrigeration and air-conditioning systems. Mechanical engineers design other machines inside buildings, such as elevators and escalators.</p>';
+    $('.head').html(Str);
+
+    var Str2=
+    '<ul style="margin-auto;">'+
+    '<li onclick="javascript:fields(2)">FIELDS</li>'+
+    '<li>SUBJECTS</li>'+
+    '<li>TERMINOLOGIES</li>'+
+    '</ul>';
+			$('.center').html(Str2);
+  }
+  function civil()
+  {
+    var Str=
+    '<h2 style="color:gold;">CIVIL ENGINEERING</h2>'+
+    '<p style="color:white;"><b style="font-size:20px;">What does a Civil engineer do?</b>Civil engineers design major transportation projects. Civil engineers conceive, design, build, supervise, operate, construct and maintain infrastructure projects and systems in the public and private sector, including roads, buildings, airports, tunnels, dams, bridges, and systems for water supply and sewage treatment.</p>';
+    $('.head').html(Str);
+
+    var Str2=
+    '<ul style="margin-auto;">'+
+    '<li onclick="javascript:fields(3)">FIELDS</li>'+
+    '<li>SUBJECTS</li>'+
+    '<li>TERMINOLOGIES</li>'+
+    '</ul>';
+			$('.center').html(Str2);
+
+  }
+  function elec()
+  {
+    var Str=
+    '<h2 style="color:gold;">ELECTRICAL ENGINEERING</h2>'+
+    '<p style="color:white;"><b style="font-size:20px;">What does a Electrical engineer do?</b> Electrical engineers design, develop, test and manage the manufacturing of electrical equipment, from electric motors and navigation systems to power generation equipment and the electrical components of vehicles and personal devices. ... Design new ways to use electrical power to develop or improve products.</p>';
+    $('.head').html(Str);
+
+    var Str2=
+    '<ul style="margin-auto;">'+
+    '<li onclick="javascript:fields(4)">FIELDS</li>'+
+    '<li>SUBJECTS</li>'+
+    '<li>TERMINOLOGIES</li>'+
+    '</ul>';
+			$('.center').html(Str2);
+
+  }
+  function fields(val)
+  {
+    //document.getElementById('list').innerHTML="<li onclick="">WEB-DEV</li> <li>APP-DEV</li> <li>AI/ML</li> <li>DATA SCIENCE</li> <li>OPEN SOURCE</li>";
+    if(val==1)
+    {
+    var Str=
+    '<h2 style="color:purple;">COMPUTER ENGINEERING-FIELDS</h2>';
+    $('.head').html(Str);
+    var Str2 =
+    '<ul id="list">'+
+    '<a target="_blank" href="cse_field.html#web"><li>WEB-DEV</li></a>'+
+    '<a target="_blank" href="cse_field.html#appdevelopment"><li>APP-DEV</li></a>'+
+    '<a target="_blank" href="cse_field.html#ai"><li>A I</li></a></ul>'+
+    '<ul id="list"><a target="_blank" href="cse_field.html#ml"><li>M L</li></a>'+
+    '<a target="_blank" href="cse_field.html#datascience"><li>DATA SCIENCE</li></ul></a>'+
+    '</ul>';
+			$('.center').html(Str2);
+    }
+    else if(val==2)
+    {
+      var Str=
+      '<h2 style="color:purple;">MECHANICAL ENGINEERING-FIELDS</h2>';
+      $('.head').html(Str);
+      var Str2 =
+      '<ul id="list">'+
+      '<a href="https://www.geeksforgeeks.org/how-to-change-the-style-of-alert-box-using-css/.gfg-icon_dark-mode"><li>WEB-DEV</li></a>'+
+      '<li>APP_DEV</li>'+
+      '<li>AI/ML</li>'+
+      '<li>DATA SCIENCE</li></ul>'+
+      '<ul id="list"><li>CYBER SECURITY</li>'+
+      '<li>OPEN SOURCE</li>'+
+      '<li>BLOCK CHAIN</li>'+
+      '</ul>';
+  			$('.center').html(Str2);
+    }
+    else if (val==3)
+    {
+      var Str=
+      '<h2 style="color:purple;">CIVIL ENGINEERING-FIELDS</h2>';
+      $('.head').html(Str);
+      var Str2 =
+      '<ul id="list">'+
+      '<a target="_blank" href="civil_field.html#ge"><li>Geotechnical Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#fe"><li>Forensic Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#se"><li>Structural Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#te"><li>Transport Engineering</li></ul></a>'+
+      '<ul id="list"><a target="_blank" href="civil_field.html#we"><li>Water Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#cme"><li>Construction and Management Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#ce"><li>Coastal Engineering</li></a>'+
+      '<a target="_blank" href="civil_field.html#ee"><li>Earthquake Engineering</li></a>'+
+      '</ul>';
+  			$('.center').html(Str2);
+    }
+    else if(val==4)
+    {
+      var Str=
+      '<h2 style="color:purple;">ELECTRICAL ENGINEERING-FIELDS</h2>';
+      $('.head').html(Str);
+      var Str2 =
+      '<ul id="list">'+
+      '<a target="_blank"  href="elec_field.html#pe"><li>Power engineering</li></a>'+
+      '<a  target="_blank" href="elec_field.html#ce"><li>Control engineering</li></a>'+
+      '<a  target="_blank" href="elec_field.html#ee"><li>Electronic engineering</li></a>'+
+      '<a  target="_blank" href="elec_field.html#cmpe"><li>Computer engineering</li></ul></a>'+
+      '<ul id="list"><a  target="_blank" href="elec_field.html#sp"><li>Signal processing</li></a>'+
+      '<a  target="_blank" href="elec_field.html#te"><li>Telecommunications engineering</li></a>'+
+      '<a target="_blank"  href="elec_field.html#ie"><li>Instrumentation engineering</li></a>'+
+      '<a target="_blank"  href="elec_field.html#m"><li>Microelectronics</li></a>'+
+      '</ul>';
+  			$('.center').html(Str2);
+    }
+  }
+  function magi()
+  {
+    //document.getElementById('list').innerHTML="<li onclick="">WEB-DEV</li> <li>APP-DEV</li> <li>AI/ML</li> <li>DATA SCIENCE</li> <li>OPEN SOURCE</li>";
+    var Str =
+    '<ul>'+
+    '<a href=""><li>CS</li></a>'+
+    '<li>MECHANICAL</li>'+
+    '<li>CIVIL</li>'+
+    '<li>ELECTRICAL</li>'+
+    '</ul>';
+			$('.center').html(Str);
+  }
+
+  function web_dev()
+  {
+
+  }
+
+</script>
+  </body>
+</html>
